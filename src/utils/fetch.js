@@ -40,7 +40,7 @@ function getAuthHeaders(url) {
       nextHeaders[key] = currentHeaders[key];
     }
 
-    return addAuthorizationHeader(currentHeaders['access-token'], nextHeaders);
+    return addAuthorizationHeader(currentHeaders['access-token']||currentHeaders['access_token'], nextHeaders);
   } else {
     return {};
   }
