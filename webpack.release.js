@@ -20,7 +20,7 @@ module.exports = {
   externals: [
     function(rtx, req, cb) {
       if (/\.\.\/\.\.\//.test(req)) {
-        return cb(null, "commonjs redux-auth");
+        return cb(null, "commonjs wealthworks-redux-auth");
       } else {
         cb();
       }
